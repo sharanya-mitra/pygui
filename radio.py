@@ -34,4 +34,5 @@ def clicked(value):
 
 myButton = Button(root, text="Click Me!", command=lambda: clicked(pizza.get()))
 myButton.pack()
+  
 mainloop()
