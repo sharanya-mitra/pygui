@@ -5,7 +5,7 @@ import sqlite3
 
 root = Tk()
 root.title('.....')
-root.iconbitmap('favicon.ico')
+# root.iconbitmap('favicon.ico')
 root.geometry("400x400")
 
 # Database  
@@ -16,19 +16,16 @@ conn = sqlite3.connect('address_book.db')
 #create cursor
 c = conn.cursor()
 
-
-c.execute("""CREATE TABLE IF NOT EXISTS address(
-    first_name text,
-    last_name text,
-    address text,
-    city text,
-    state text,
-    zipcode integer
-)""")
-
-
-
-
+'''
+c.execute("""CREATE TABLE addresses (
+		first_name text,
+		last_name text,
+		address text,
+		city text,
+		state text,
+		zipcode integer
+		)""")
+'''
 
 
 
